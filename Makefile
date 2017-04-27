@@ -3,9 +3,10 @@
 
 OPT=-O2
 CFLAGS=$(OPT) -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes
+LDFLAGS=-framework IOKit
 
-VERSION=3.2.1
-DATE=2013-11-10
+VERSION=3.2.2
+DATE=2017-04-27
 
 # Host OS and release (override if you are cross-compiling)
 HOST=
@@ -33,7 +34,7 @@ PREFIX=/usr/local
 SBINDIR=$(PREFIX)/sbin
 SHAREDIR=$(PREFIX)/share
 IDSDIR=$(SHAREDIR)
-MANDIR:=$(shell if [ -d $(PREFIX)/share/man ] ; then echo $(PREFIX)/share/man ; else echo $(PREFIX)/man ; fi)
+MANDIR:=$(PREFIX)/share/man
 INCDIR=$(PREFIX)/include
 LIBDIR=$(PREFIX)/lib
 PKGCFDIR=$(LIBDIR)/pkgconfig

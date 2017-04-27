@@ -1,3 +1,9 @@
+2017-04-27  Eugene Istratov <warexify@outlook.com>
+
+	* Released as 3.2.2.
+
+	* Fixed building with DirectHW on macOS 10.12
+
 2013-11-10  Martin Mares <mj@ucw.cz>
 
 	* Released as 3.2.1.
@@ -117,7 +123,7 @@
 	* Updated pci.ids to the today's snapshot of the database.
 
 	* Fixed memory and file descriptor leak in the dump back-end.
-	
+
 	* The SR-IOV capability decoder now prints the VF BAR's.
 	Patch by Chris Wright, cleaned up by me.
 
@@ -359,7 +365,7 @@
 
 	* Makefile: stripping of the binaries during installation can be
 	overridden by the STRIP variable.
-	
+
 	* lib/types.h: We use the integer types from <stdint.h> if the
 	compiler claims C99 support.
 

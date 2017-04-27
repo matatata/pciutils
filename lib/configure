@@ -132,6 +132,12 @@ case $sys in
 		esac
 		echo >>$c '#define PCI_HAVE_STDINT_H'
 		;;
+	darwin)
+		echo_n " i386-ports"
+		echo >>$c '#define PCI_HAVE_PM_INTEL_CONF'
+		echo >>$c '#define PCI_HAVE_64BIT_ADDRESS'
+		echo >>$m 'WITH_LIBS+=-framework DirectHW'
+		;;
 	*)
 		echo " Unfortunately, your OS is not supported by the PCI Library"
 		exit 1

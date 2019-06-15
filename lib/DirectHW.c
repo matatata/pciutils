@@ -16,9 +16,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <AvailabilityMacros.h>
+//#include <AvailabilityMacros.h>
 #include <IOKit/IOKitLib.h>
-#include <ApplicationServices/ApplicationServices.h>
+//#include <ApplicationServices/ApplicationServices.h>
 #include <CoreFoundation/CoreFoundation.h>
 #include <unistd.h>
 #include <inttypes.h>

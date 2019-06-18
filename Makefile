@@ -1,9 +1,8 @@
 # Makefile for The PCI Utilities
 # (c) 1998--2013 Martin Mares <mj@ucw.cz>
-
 OPT=-O2
-CFLAGS=$(OPT) -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes
-LDFLAGS=-framework IOKit
+CFLAGS=$(OPT) -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -F/Library/Frameworks
+LDFLAGS=-framework IOKit -framework DirectHW -F/Library/Frameworks 
 
 VERSION=3.2.2
 DATE=2017-04-27

@@ -50,8 +50,7 @@ all: $(PCILIB) $(PCILIBPC)
 
 ifeq ($(SHARED),no)
 $(PCILIB): $(addsuffix .o,$(OBJS))
-	# Matteo: why would I want to remove the libpci.a file? I need it to link other programs with.
-	#rm -f $@
+	rm -f $@
 	$(AR) rcs $@ $^
 	$(RANLIB) $@
 else
